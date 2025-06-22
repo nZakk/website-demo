@@ -1,0 +1,257 @@
+:root {
+/*criando as var das cores*/
+    --azul-medio: #3A7CA5;
+    --azul-medio2: #2F6690;
+    --azul-forte: #1c5575;
+    --azul-saturado: #00B4D8;
+    --azul-bege: #FFF9F0;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* setando a animacao de transicao dos links da nav */
+html {
+    scroll-behavior: smooth;
+}
+
+span#ponto-detalhe {
+    color: var(--azul-saturado);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--azul-medio2);
+}
+
+nav ul li {
+    padding: 30px 20px 20px 20px;
+    margin: 0 20px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    padding: 30px 20px 20px 20px;
+}
+
+
+nav ul h1 {
+    font-size: 40px;
+    margin-right: 100px;
+    padding: 20px;
+}
+
+
+nav ul li * {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    padding: auto;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    background-color: var(--azul-bege);
+    color: var(--azul-medio2);
+    border-radius: 70px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div#texto-previa {
+    padding: 150px 0;
+    background-color: var(--azul-medio);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div#texto-previa * {
+    margin: 5px;
+}
+
+main div#texto-previa h2 {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+main div#texto-previa h3 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+main div#texto-previa p {
+    margin-top: 40px;
+    font-size: 28px;
+    width: 40%;
+}
+
+main div#texto-sobre {
+    background-color: var(--azul-medio2);
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 472px;
+}
+
+main div#texto-sobre p {
+    width: 50%;
+    font-size: 23px;
+}
+
+main span#comeco-main-texto {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main div#texto-sobre img {
+    height: 400px;
+    border-radius: 30px;
+}
+
+main div#certificados {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--azul-medio2);
+    padding: 100px 0;
+}
+
+main div#certificados div#cert-titulo {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+main div#certificados div#cert-titulo h2 {
+    width: auto;
+    font-size: 45px;
+}
+
+main #containter-cert {
+    display: grid;
+    width: inherit;
+    grid-template-columns: 25em 25em 25em;
+    grid-template-rows: 25em;
+    justify-content: space-around;
+}
+
+main #containter-cert div.cert-box {
+    background-color: var(--azul-bege);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #containter-cert div.cert-box img#logo-harvard {
+    height: 250px;
+    width: 300px;
+}
+
+main #containter-cert div.cert-box img#logo-comptia {
+    height: 260px;
+    width: 290px;
+}
+
+main #containter-cert div.cert-box img#logo-uninter {
+    height: 250px;
+    width: 325px;
+}
+
+main #containter-cert div.cert-box h3 {
+    margin: 10px;
+}
+
+main #portifolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--azul-medio2);
+}
+
+main #portifolio-lista {
+    background-color: var(--azul-bege);
+    border-radius: 25px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+main #portifolio-lista h2 {
+    font-size: 45px;
+    margin: 50px;
+}
+
+main #portifolio ul li {
+    margin: 50px;
+    font-size: 20px;
+}
+
+main #portifolio ul {
+    margin-bottom: 50px;
+}
+
+main #portifolio ul li::marker {
+    color: var(--azul-saturado);
+}
+
+main #contato-texto {
+    margin: 150px;
+}
+
+main #contato-texto h2 {
+    font-size: 45px;
+}
+
+
+main #contato-texto h3 {
+    margin:  30px 0;
+}
+
+main #formulario-email h3 {
+    font-size: 25px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--azul-bege);
+}
+
+footer div#texto-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0;
+    width: 100%;
+}
+
+footer div#texto-footer p {
+    font-weight: bolder;
+}
